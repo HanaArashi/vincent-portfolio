@@ -14,13 +14,13 @@ export default function Navbar() {
 
         {/* Logo */}
         <Image
-          src="/images/logo (2).png"
-          alt="Vincent Tibor Logo"
-          width={170}
-          height={160}
-          priority
-          className="w-28 md:w-[170px] h-auto"
-        />
+  src="/images/logo (2).png"
+  alt="Vincent Tibor Logo"
+  width={170}
+  height={160}
+  priority
+className="w-24 md:w-[150px] h-auto mt-2"
+/>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
@@ -77,7 +77,7 @@ export default function Navbar() {
       </div>
 
       {/* Curved Line */}
-      <div className="relative w-full max-w-[360px] md:max-w-[360px] ml-auto mt-2">
+      <div className="relative w-full max-w-[360px] md:max-w-[360px] ml-auto -mt-6">
 
         <svg
           className="w-full h-auto"

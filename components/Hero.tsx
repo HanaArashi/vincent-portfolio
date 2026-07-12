@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Code2, Palette, Rocket } from "lucide-react";
+
 
 export default function Hero() {
   return (
@@ -190,44 +192,29 @@ export default function Hero() {
 {/* Hero Content */}
 <div className="relative text-center pt-10 pb-6 px-8">
   
-  {/* Floating Badge */}
-  <div className="flex justify-center mb-8">
-  <div className="flex items-center gap-2 rounded-full border border-violet-200 bg-white/80 backdrop-blur-md px-7 py-3 shadow-[0_10px_30px_rgba(124,58,237,.18)]">
-    <Image
-      src="/images/sparkle.png"
-      alt="Sparkle"
-      width={18}
-      height={18}
-      className="animate-float"
-    />
-
-    <span className="text-violet-700 text-[15px] font-medium">
-      Building beautiful & functional web experiences
-    </span>
-  </div>
-</div>
 
 
 
   {/* Name */}
   <h1
-    className="
-      text-6xl
-      md:text-8xl
-      font-black
-      tracking-tight
-      bg-gradient-to-r
-      from-pink-500
-      via-violet-500
-      to-cyan-500
-      bg-clip-text
-      text-transparent
-      drop-shadow-[0_8px_22px_rgba(168,85,247,.45)]
-      [-webkit-text-stroke:2px_rgba(255,255,255,.75)]
-    "
-  >
-    VINCENT TIBOR
-  </h1>
+  className="
+    mt-10
+    text-6xl
+    md:text-8xl
+    font-black
+    tracking-tight
+    bg-gradient-to-r
+    from-pink-500
+    via-violet-500
+    to-cyan-500
+    bg-clip-text
+    text-transparent
+    drop-shadow-[0_8px_22px_rgba(168,85,247,.45)]
+    [-webkit-text-stroke:2px_rgba(255,255,255,.75)]
+  "
+>
+  VINCENT TIBOR
+</h1>
 
   {/* Subtitle */}
   <div className="mt-6 flex items-center justify-center gap-4">
@@ -550,9 +537,11 @@ export default function Hero() {
 <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 -mt-8 items-start">
 
 {/* Project 1 */}
-<div
+<Link
+  href="/projects/gameblitz"
   className="
     group
+    block
     overflow-hidden
     rounded-[22px]
     bg-white
@@ -628,7 +617,7 @@ export default function Hero() {
 
   </div>
 
-</div>
+  </Link>
 
 {/* Project 2 */}
 <div

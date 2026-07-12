@@ -1,86 +1,87 @@
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaEnvelope,
+} from "react-icons/fa";
+import { SiWattpad } from "react-icons/si";
+
 export default function Footer() {
-    return (
-      <footer className="mt-24 flex flex-col items-center gap-6 pb-12">
-  
-        <div className="flex flex-wrap items-center justify-center gap-6 text-violet-700 font-semibold">
-  
+  return (
+    <footer className="mt-32 border-t border-violet-200 bg-[#F7F3FF]">
+      <div className="max-w-6xl mx-auto px-6 py-10">
+
+        {/* Links */}
+        <div className="flex flex-wrap justify-center items-center gap-8 text-[17px] font-semibold">
+
           <a
-            href="#about"
-            className="hover:text-fuchsia-500 transition-colors"
-          >
-            about
-          </a>
-  
-          <a
-            href="/resume.pdf"
+            href="https://www.wattpad.com/user/Hanashi_184"
             target="_blank"
-            className="hover:text-fuchsia-500 transition-colors"
-          >
-            résumé
-          </a>
-  
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            className="hover:text-fuchsia-500 transition-colors"
-          >
-            Instagram
-          </a>
-  
-          <a
-            href="https://www.wattpad.com/user/Hanashi"
-            target="_blank"
-            className="hover:text-fuchsia-500 transition-colors"
+            className="text-violet-600 hover:text-fuchsia-500 transition"
           >
             Wattpad
           </a>
-  
+
           <a
-            href="https://linkedin.com"
+            href="https://www.instagram.com/vncnt_08"
             target="_blank"
-            className="hover:text-fuchsia-500 transition-colors"
+            className="text-violet-600 hover:text-fuchsia-500 transition"
+          >
+            Instagram
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/vincent-tibor-b3b5a0399"
+            target="_blank"
+            className="text-violet-600 hover:text-fuchsia-500 transition"
           >
             LinkedIn
           </a>
-  
+
           <a
-            href="mailto:your@email.com"
-            className="hover:text-fuchsia-500 transition-colors"
+            href="mailto:vincenttibor184@gmail.com"
+            className="text-violet-600 hover:text-fuchsia-500 transition"
           >
             Email
           </a>
-  
+
         </div>
-  
-        <svg
-          width="360"
-          height="30"
-          viewBox="0 0 360 30"
-          fill="none"
-        >
-          <path
-            d="M0 15 C40 0,80 30,120 15 S200 0,240 15 S320 30,360 15"
-            stroke="url(#waveGradient)"
-            strokeWidth="2"
-            fill="none"
-          />
-  
-          <defs>
-            <linearGradient
-              id="waveGradient"
-              x1="0"
-              y1="0"
-              x2="360"
-              y2="0"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#ff61d8" />
-              <stop offset="0.5" stopColor="#8b5cf6" />
-              <stop offset="1" stopColor="#22d3ee" />
-            </linearGradient>
-          </defs>
-        </svg>
-  
-      </footer>
-    );
-  }
+
+        {/* Icons */}
+        <div className="flex justify-center gap-6 mt-6 text-[22px] text-violet-500">
+
+          <a
+            href="https://www.wattpad.com/user/Hanashi_184"
+            target="_blank"
+          >
+            <SiWattpad className="hover:text-fuchsia-500 transition" />
+          </a>
+
+          <a
+            href="https://www.instagram.com/vncnt_08"
+            target="_blank"
+          >
+            <FaInstagram className="hover:text-fuchsia-500 transition" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/vincent-tibor-b3b5a0399"
+            target="_blank"
+          >
+            <FaLinkedin className="hover:text-fuchsia-500 transition" />
+          </a>
+
+          <a href="mailto:vincenttibor184@gmail.com">
+            <FaEnvelope className="hover:text-fuchsia-500 transition" />
+          </a>
+
+        </div>
+
+        {/* Copyright */}
+        <p className="mt-8 text-center text-sm text-violet-500">
+          © {new Date().getFullYear()} Vincent Tibor. All rights reserved.
+        </p>
+
+      </div>
+    </footer>
+  );
+}
