@@ -129,7 +129,7 @@ export default function Hero() {
 />
 
 
-<div className="relative w-full max-w-[1160px] mx-auto px-10 mt-6">
+<div className="relative w-full max-w-[1160px] mx-auto px-4 md:px-10 mt-6">
           {/* Hero Window Container */}
           <div
   className="
@@ -192,21 +192,22 @@ export default function Hero() {
   
   {/* Floating Badge */}
   <div className="flex justify-center mb-8">
-    <div className="rounded-full border border-violet-200 bg-white/80 backdrop-blur-md px-7 py-3 shadow-[0_10px_30px_rgba(124,58,237,.18)]">
-      <span className="text-violet-700 text-[15px] font-medium">
-        ✨ Building beautiful & functional web experiences
-      </span>
-    </div>
-  </div>
+  <div className="flex items-center gap-2 rounded-full border border-violet-200 bg-white/80 backdrop-blur-md px-7 py-3 shadow-[0_10px_30px_rgba(124,58,237,.18)]">
+    <Image
+      src="/images/sparkle.png"
+      alt="Sparkle"
+      width={18}
+      height={18}
+      className="animate-float"
+    />
 
-  {/* Heart */}
-  <Image
-    src="/images/heart.png"
-    alt=""
-    width={26}
-    height={26}
-    className="mx-auto mb-3 animate-float"
-  />
+    <span className="text-violet-700 text-[15px] font-medium">
+      Building beautiful & functional web experiences
+    </span>
+  </div>
+</div>
+
+
 
   {/* Name */}
   <h1
