@@ -620,9 +620,12 @@ export default function Hero() {
   </Link>
 
 {/* Project 2 */}
+<Link href="/projects/soraea">
+
 <div
   className="
     group
+    block
     self-start
     overflow-hidden
     rounded-[22px]
@@ -634,10 +637,13 @@ export default function Hero() {
     duration-300
     hover:-translate-y-2
     hover:shadow-xl
+    cursor-pointer
   "
 >
+
   {/* Thumbnail */}
   <div className="relative">
+
     <Image
       src="/images/SORAEA.png"
       alt="SORAEA"
@@ -647,7 +653,7 @@ export default function Hero() {
     />
 
     {/* External Link */}
-    <button
+    <div
       className="
         absolute
         top-3
@@ -661,12 +667,13 @@ export default function Hero() {
         items-center
         justify-center
         text-violet-600
-        hover:scale-110
         transition
+        group-hover:scale-110
       "
     >
       ↗
-    </button>
+    </div>
+
   </div>
 
   {/* Content */}
@@ -677,29 +684,31 @@ export default function Hero() {
     </h3>
 
     <p className="mt-2 text-[15px] leading-7 text-gray-600">
-  AI-powered psoriasis detection system using EfficientNet.
-</p>
+      AI-powered psoriasis detection system using EfficientNet.
+    </p>
 
     {/* Tech Stack */}
     <div className="flex items-center gap-2 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
 
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  React
-</span>
+      <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+        React
+      </span>
 
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  FastAPI
-</span>
+      <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+        FastAPI
+      </span>
 
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  EfficientNet
-</span>
+      <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+        EfficientNet
+      </span>
 
-</div>
+    </div>
 
   </div>
 
 </div>
+
+</Link>
 
 {/* Project 3 */}
 <div

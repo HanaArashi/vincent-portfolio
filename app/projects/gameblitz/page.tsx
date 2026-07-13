@@ -4,8 +4,48 @@ import Link from "next/link";
 
 export default function GameBlitzPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#E8D8FF] via-[#F4EDFF] to-[#EFE7FF]">
+<main className="relative overflow-hidden min-h-screen bg-gradient-to-b from-[#E8D8FF] via-[#F4EDFF] to-[#EFE7FF]">
+{/* Floating Decorations */}
 
+<Image
+  src="/images/1.png"
+  alt=""
+  width={55}
+  height={55}
+  className="absolute top-20 left-10 opacity-80 animate-float pointer-events-none"
+/>
+
+<Image
+  src="/images/2.png"
+  alt=""
+  width={42}
+  height={42}
+  className="absolute top-[520px] right-16 animate-float delay-300 pointer-events-none"
+/>
+
+<Image
+  src="/images/butterfly.png"
+  alt=""
+  width={60}
+  height={60}
+  className="absolute top-[1300px] left-12 rotate-[-12deg] animate-float pointer-events-none"
+/>
+
+<Image
+  src="/images/cloud.png"
+  alt=""
+  width={40}
+  height={40}
+  className="absolute top-[2200px] right-10 animate-float pointer-events-none"
+/>
+
+<Image
+  src="/images/clover.png"
+  alt=""
+  width={90}
+  height={90}
+  className="absolute bottom-24 right-10 animate-float pointer-events-none"
+/>
       <div className="max-w-7xl mx-auto px-6 py-12">
 
         {/* Back */}
