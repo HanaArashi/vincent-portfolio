@@ -711,6 +711,8 @@ export default function Hero() {
 </Link>
 
 {/* Project 3 */}
+<Link href="/projects/student-management">
+
 <div
   className="
     group
@@ -725,20 +727,23 @@ export default function Hero() {
     duration-300
     hover:-translate-y-2
     hover:shadow-xl
+    cursor-pointer
   "
 >
+
   {/* Thumbnail */}
   <div className="relative">
+
     <Image
       src="/images/STMM.png"
-      alt="Student Management System"
+      alt="student-management"
       width={700}
       height={400}
       className="w-full h-[155px] object-cover"
     />
 
     {/* External Link */}
-    <button
+    <div
       className="
         absolute
         top-3
@@ -752,20 +757,21 @@ export default function Hero() {
         items-center
         justify-center
         text-violet-600
-        hover:scale-110
         transition
+        group-hover:scale-110
       "
     >
       ↗
-    </button>
+    </div>
+
   </div>
 
   {/* Content */}
   <div className="px-5 pt-4 pb-4">
 
-  <h3 className="text-[21px] font-bold leading-tight text-violet-700">
-  Student Management System
-</h3>
+    <h3 className="text-[21px] font-bold leading-tight text-violet-700">
+      Student Management System
+    </h3>
 
     <p className="mt-2 text-[15px] leading-6 text-gray-600">
       Web-based student records and grade management system.
@@ -774,105 +780,110 @@ export default function Hero() {
     {/* Tech Stack */}
     <div className="flex items-center gap-2 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
 
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  Flask
-</span>
+      <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+        Flask
+      </span>
 
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  MySQL
-</span>
+      <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+        MySQL
+      </span>
 
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  Bootstrap
-</span>
+      <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+        Bootstrap
+      </span>
 
-</div>
+    </div>
 
   </div>
 
 </div>
+
+</Link>
 
 {/* Project 4 */}
-<div
-  className="
-    group
-    self-start
-    overflow-hidden
-    rounded-[22px]
-    bg-white
-    border
-    border-violet-100
-    shadow-lg
-    transition-all
-    duration-300
-    hover:-translate-y-2
-    hover:shadow-xl
-  "
->
-  {/* Thumbnail */}
-  <div className="relative">
-    <Image
-      src="/images/JLUM.png"
-      alt="JLUM"
-      width={700}
-      height={400}
-      className="w-full h-[155px] object-cover"
-    />
+<Link href="/projects/jlum">
+  <div
+    className="
+      group
+      self-start
+      overflow-hidden
+      rounded-[22px]
+      bg-white
+      border
+      border-violet-100
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-2
+      hover:shadow-xl
+      cursor-pointer
+    "
+  >
+    {/* Thumbnail */}
+    <div className="relative">
+      <Image
+        src="/images/JLUM.png"
+        alt="JLUM"
+        width={700}
+        height={400}
+        className="w-full h-[155px] object-cover"
+      />
 
-    {/* External Link */}
-    <button
-      className="
-        absolute
-        top-3
-        right-3
-        w-8
-        h-8
-        rounded-full
-        bg-white
-        shadow-md
-        flex
-        items-center
-        justify-center
-        text-violet-600
-        hover:scale-110
-        transition
-      "
-    >
-      ↗
-    </button>
+      {/* External Link */}
+      <div
+        className="
+          absolute
+          top-3
+          right-3
+          w-8
+          h-8
+          rounded-full
+          bg-white
+          shadow-md
+          flex
+          items-center
+          justify-center
+          text-violet-600
+          group-hover:scale-110
+          transition
+        "
+      >
+        ↗
+      </div>
+    </div>
+
+    {/* Content */}
+    <div className="px-5 pt-4 pb-4">
+
+      <h3 className="text-[30px] font-bold text-violet-700">
+        JLUM
+      </h3>
+
+      <p className="mt-2 text-[15px] leading-6 text-gray-600">
+        Company website showcasing services and business information.
+      </p>
+
+      {/* Tech Stack */}
+      <div className="flex items-center gap-2 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          React
+        </span>
+
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          Tailwind CSS
+        </span>
+
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          Firebase
+        </span>
+
+      </div>
+
+    </div>
+
   </div>
-
-  {/* Content */}
-  <div className="px-5 pt-4 pb-4">
-
-    <h3 className="text-[30px] font-bold text-violet-700">
-      JLUM
-    </h3>
-
-    <p className="mt-2 text-[15px] leading-6 text-gray-600">
-      Company website showcasing services and business information.
-    </p>
-
-    {/* Tech Stack */}
-    <div className="flex items-center gap-2 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  React
-</span>
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  Tailwind CSS
-</span>
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  Firebase
-</span>
-
-</div>
-
-  </div>
-
-</div>
+</Link>
 
 {/* Project 5 */}
 <div

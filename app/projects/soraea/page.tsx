@@ -355,12 +355,6 @@ export default function SoraeaPage() {
           "View your analyses, appointments, and recent activity at a glance.",
       },
       {
-        image: "/images/soraea15.png",
-        title: "Analysis Results",
-        description:
-          "View your uploaded analyses and diagnosis history.",
-      },
-      {
         image: "/images/soraea16.png",
         title: "My Appointments",
         description:
