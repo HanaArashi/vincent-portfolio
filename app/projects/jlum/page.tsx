@@ -32,7 +32,6 @@ export default function StudentManagementPage() {
   height={70}
   className="absolute top-[820px] right-[10%] rotate-[15deg] animate-float delay-200 pointer-events-none"
 />
-
       <div className="max-w-7xl mx-auto px-6 py-12">
 
         {/* Back */}
@@ -50,7 +49,7 @@ export default function StudentManagementPage() {
   <div>
 
     <span className="uppercase tracking-[4px] text-violet-500 font-semibold">
-      Featured Project
+      Internship Project
     </span>
 
     <h1 className="mt-3 text-5xl md:text-6xl font-black bg-gradient-to-r from-pink-500 via-violet-500 to-cyan-500 bg-clip-text text-transparent leading-tight">
@@ -72,6 +71,10 @@ export default function StudentManagementPage() {
       </span>
 
       <span className="px-4 py-2 rounded-full bg-violet-100 text-violet-700 font-semibold">
+        Internship Project
+      </span>
+
+      <span className="px-4 py-2 rounded-full bg-violet-100 text-violet-700 font-semibold">
         React.js
       </span>
 
@@ -87,15 +90,20 @@ export default function StudentManagementPage() {
 
     <p className="mt-8 text-gray-700 leading-8">
       <strong>JLUM Website</strong> is a modern corporate web platform
-      designed to strengthen the company’s digital presence and provide
-      visitors with a seamless browsing experience. The project focused on
-      creating a clean, responsive, and visually engaging interface that
-      effectively showcases the company’s services, brand identity, and
-      business information. As the Frontend Developer and UI/UX Designer,
-      I was responsible for designing the user interface, developing the
-      frontend components, ensuring responsiveness across devices, and
-      enhancing the overall user experience through intuitive navigation
-      and modern design principles.
+      developed during my internship to strengthen the organization's
+      digital presence and provide visitors with a seamless browsing
+      experience. The website was designed to effectively showcase the
+      company's services, business information, and brand identity
+      through a clean, responsive, and visually engaging interface.
+      <br /><br />
+      As the <strong>Frontend Developer and UI/UX Designer</strong>, I was
+      responsible for designing the user interface, creating responsive
+      layouts, developing frontend components, and enhancing the overall
+      user experience through intuitive navigation and modern design
+      principles. I collaborated with the team to ensure the website
+      aligned with the organization's goals while maintaining usability,
+      accessibility, and responsiveness across different devices and
+      screen sizes.
     </p>
 
   </div>

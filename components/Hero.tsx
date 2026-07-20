@@ -886,168 +886,174 @@ export default function Hero() {
 </Link>
 
 {/* Project 5 */}
-<div
-  className="
-    group
-    self-start
-    overflow-hidden
-    rounded-[22px]
-    bg-white
-    border
-    border-violet-100
-    shadow-lg
-    transition-all
-    duration-300
-    hover:-translate-y-2
-    hover:shadow-xl
-  "
->
-  {/* Thumbnail */}
-  <div className="relative">
-    <Image
-      src="/images/ONE LGU.png"
-      alt="ONE LGU"
-      width={700}
-      height={400}
-      className="w-full h-[155px] object-cover"
-    />
+<Link href="/projects/lgu">
+  <div
+    className="
+      group
+      self-start
+      overflow-hidden
+      rounded-[22px]
+      bg-white
+      border
+      border-violet-100
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-2
+      hover:shadow-xl
+      cursor-pointer
+    "
+  >
+    {/* Thumbnail */}
+    <div className="relative">
+      <Image
+        src="/images/ONE LGU.png"
+        alt="ONE LGU"
+        width={700}
+        height={400}
+        className="w-full h-[155px] object-cover"
+      />
 
-    {/* External Link */}
-    <button
-      className="
-        absolute
-        top-3
-        right-3
-        w-8
-        h-8
-        rounded-full
-        bg-white
-        shadow-md
-        flex
-        items-center
-        justify-center
-        text-violet-600
-        hover:scale-110
-        transition
-      "
-    >
-      ↗
-    </button>
+      {/* External Link */}
+      <div
+        className="
+          absolute
+          top-3
+          right-3
+          w-8
+          h-8
+          rounded-full
+          bg-white
+          shadow-md
+          flex
+          items-center
+          justify-center
+          text-violet-600
+          group-hover:scale-110
+          transition
+        "
+      >
+        ↗
+      </div>
+    </div>
+
+    {/* Content */}
+    <div className="px-5 pt-4 pb-4">
+
+      <h3 className="text-[30px] font-bold text-violet-700">
+        ONE LGU
+      </h3>
+
+      <p className="mt-2 text-[15px] leading-6 text-gray-600">
+        Web platform for accessing local government services and information.
+      </p>
+
+      {/* Tech Stack */}
+      <div className="flex items-center gap-2 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          React
+        </span>
+
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          Tailwind CSS
+        </span>
+
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          Firebase
+        </span>
+
+      </div>
+
+    </div>
+
   </div>
-
-  {/* Content */}
-  <div className="px-5 pt-4 pb-4">
-
-    <h3 className="text-[30px] font-bold text-violet-700">
-      ONE LGU
-    </h3>
-
-    <p className="mt-2 text-[15px] leading-6 text-gray-600">
-      Web platform for accessing local government services and information.
-    </p>
-
-    {/* Tech Stack */}
-    <div className="flex items-center gap-2 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  React
-</span>
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  Tailwind CSS
-</span>
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  Firebase
-</span>
-
-</div>
-
-  </div>
-
-</div>
+</Link>
 
 {/* Project 6 */}
-<div
-  className="
-    group
-    self-start
-    overflow-hidden
-    rounded-[22px]
-    bg-white
-    border
-    border-violet-100
-    shadow-lg
-    transition-all
-    duration-300
-    hover:-translate-y-2
-    hover:shadow-xl
-  "
->
-  {/* Thumbnail */}
-  <div className="relative">
-    <Image
-      src="/images/Sweetdazzle.png"
-      alt="Sweetdazzle"
-      width={700}
-      height={400}
-      className="w-full h-[155px] object-cover"
-    />
+<Link href="/projects/sweetdazzlee">
+  <div
+    className="
+      group
+      self-start
+      overflow-hidden
+      rounded-[22px]
+      bg-white
+      border
+      border-violet-100
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-2
+      hover:shadow-xl
+      cursor-pointer
+    "
+  >
+    {/* Thumbnail */}
+    <div className="relative">
+      <Image
+        src="/images/SweetDazzle.png"
+        alt="SweetDazzle"
+        width={700}
+        height={400}
+        className="w-full h-[155px] object-cover"
+      />
 
-    {/* External Link */}
-    <button
-      className="
-        absolute
-        top-3
-        right-3
-        w-8
-        h-8
-        rounded-full
-        bg-white
-        shadow-md
-        flex
-        items-center
-        justify-center
-        text-violet-600
-        hover:scale-110
-        transition
-      "
-    >
-      ↗
-    </button>
+      {/* External Link */}
+      <div
+        className="
+          absolute
+          top-3
+          right-3
+          w-8
+          h-8
+          rounded-full
+          bg-white
+          shadow-md
+          flex
+          items-center
+          justify-center
+          text-violet-600
+          group-hover:scale-110
+          transition
+        "
+      >
+        ↗
+      </div>
+    </div>
+
+    {/* Content */}
+    <div className="px-5 pt-4 pb-4">
+
+      <h3 className="text-[30px] font-bold text-violet-700">
+        SweetDazzle
+      </h3>
+
+      <p className="mt-2 text-[15px] leading-6 text-gray-600">
+        E-commerce website for showcasing and selling cakes, pastries, and sweet treats.
+      </p>
+
+      {/* Tech Stack */}
+      <div className="flex items-center gap-2 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          React
+        </span>
+
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          Tailwind CSS
+        </span>
+
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          Firebase
+        </span>
+
+      </div>
+
+    </div>
+
   </div>
-
-  {/* Content */}
-  <div className="px-5 pt-4 pb-4">
-
-    <h3 className="text-[30px] font-bold text-violet-700">
-      Sweetdazzle
-    </h3>
-
-    <p className="mt-2 text-[15px] leading-6 text-gray-600">
-  Online dessert shop for showcasing products and customer orders.
-</p>
-
-    {/* Tech Stack */}
-    <div className="flex items-center gap-2 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  React
-</span>
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  Tailwind CSS
-</span>
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  Firebase
-</span>
-
-</div>
-
-  </div>
-
-</div>
+</Link>
 
 {/* Bottom Left Cat */}
 <Image
