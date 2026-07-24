@@ -128,7 +128,7 @@ export default function SweetDazzlePage() {
       </div>
 
       <Image
-        src="/images/SweetDazzle.png"
+        src="/images/Sweetdazzle.png"
         alt="SweetDazzle"
         width={1200}
         height={700}
