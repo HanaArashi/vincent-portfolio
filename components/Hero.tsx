@@ -1335,83 +1335,82 @@ export default function Hero() {
 </Link>
 
 {/* Photography */}
-<div
-  className="
-    group
-    self-start
-    overflow-hidden
-    rounded-[22px]
-    bg-white
-    border
-    border-violet-100
-    shadow-lg
-    transition-all
-    duration-300
-    hover:-translate-y-2
-    hover:shadow-xl
-  "
->
-  {/* Thumbnail */}
-  <div className="relative">
-    <Image
-      src="/images/photographys.png"
-      alt="Photography"
-      width={700}
-      height={400}
-      className="w-full h-[155px] object-cover"
-    />
+<Link href="/Justforfun/photography">
+  <div
+    className="
+      group
+      self-start
+      overflow-hidden
+      rounded-[22px]
+      bg-white
+      border
+      border-violet-100
+      shadow-lg
+      transition-all
+      duration-300
+      hover:-translate-y-2
+      hover:shadow-xl
+      cursor-pointer
+    "
+  >
+    {/* Thumbnail */}
+    <div className="relative">
+      <Image
+        src="/images/photographys.png"
+        alt="Photography"
+        width={700}
+        height={400}
+        className="w-full h-[155px] object-cover"
+      />
 
-    <button
-      className="
-        absolute
-        top-3
-        right-3
-        w-8
-        h-8
-        rounded-full
-        bg-white
-        shadow-md
-        flex
-        items-center
-        justify-center
-        text-violet-600
-        hover:scale-110
-        transition
-      "
-    >
-      ↗
-    </button>
+      <div
+        className="
+          absolute
+          top-3
+          right-3
+          w-8
+          h-8
+          rounded-full
+          bg-white
+          shadow-md
+          flex
+          items-center
+          justify-center
+          text-violet-600
+          group-hover:scale-110
+          transition
+        "
+      >
+        ↗
+      </div>
+    </div>
+
+    {/* Content */}
+    <div className="px-5 pt-4 pb-4">
+      <h3 className="text-[30px] font-bold text-violet-700">
+        Photography
+      </h3>
+
+      <p className="mt-2 text-[15px] leading-6 text-gray-600">
+        I love capturing landscapes, cafés, and aesthetic places.
+      </p>
+
+      <div className="flex items-center gap-2 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          Landscape
+        </span>
+
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          Café
+        </span>
+
+        <span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
+          Aesthetic
+        </span>
+      </div>
+    </div>
   </div>
-
-  <div className="px-5 pt-4 pb-4">
-
-    <h3 className="text-[30px] font-bold text-violet-700">
-      Photography
-    </h3>
-
-    <p className="mt-2 text-[15px] leading-6 text-gray-600">
-      I love capturing landscapes, cafés, and aesthetic places.
-    </p>
-
-    <div className="flex items-center gap-2 mt-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  Landscape
-</span>
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  Café
-</span>
-
-<span className="px-3 py-1 rounded-full bg-[#F3E8FF] text-[#6D28D9] text-[12px] font-semibold">
-  Aesthetic
-</span>
-
-</div>
-
-  </div>
-
-</div>
+</Link>
 
 </div> {/* End of grid */}
 
