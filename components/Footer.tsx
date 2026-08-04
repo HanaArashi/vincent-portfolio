@@ -7,7 +7,10 @@ import { SiWattpad } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <footer className="mt-32 border-t border-violet-200 bg-[#F7F3FF]">
+<footer
+  id="contact"
+  className="mt-32 border-t border-violet-200 bg-[#F7F3FF]"
+>
       <div className="max-w-6xl mx-auto px-6 py-10">
 
         {/* Links */}

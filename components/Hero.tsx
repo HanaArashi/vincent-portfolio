@@ -1,9 +1,31 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Code2, Palette, Rocket } from "lucide-react";
 
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+
+import "yet-another-react-lightbox/styles.css";
+
 
 export default function Hero() {
+  const [certificateIndex, setCertificateIndex] = useState(-1);
+
+  const certificateImages = [
+    { src: "/images/cert1.jpg", alt: "NVIDIA AI Academy" },
+    { src: "/images/cert2.jpg", alt: "PSITE NCR" },
+    { src: "/images/cert3.jpg", alt: "NBDB Registered Author" },
+    { src: "/images/cert4.jpg", alt: "AI & Automation in MSMEs" },
+    { src: "/images/cert5.jpg", alt: "Leading with Code" },
+    { src: "/images/cert6.jpg", alt: "Strategy & Implementation" },
+    { src: "/images/cert7.jpg", alt: "Cisco Certified Support Technician" },
+    { src: "/images/cert8.jpg", alt: "OJT Certificate of Completion" },
+    { src: "/images/cert9.jpg", alt: "Data Analytics Fundamentals" },
+  ];
+
   return (
     <section className="relative overflow-hidden pb-24">
 
@@ -232,41 +254,49 @@ export default function Hero() {
   {/* Buttons */}
   <div className="mt-10 flex justify-center gap-5">
 
-    <button
-      className="
-      rounded-2xl
-      bg-gradient-to-r
-      from-violet-600
-      to-fuchsia-500
-      px-10
-      py-4
-      text-white
-      font-semibold
-      shadow-[0_15px_30px_rgba(124,58,237,.35)]
-      hover:-translate-y-1
-      transition
-      "
-    >
-      View Projects →
-    </button>
+  <a
+  href="#projects"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    rounded-2xl
+    bg-gradient-to-r
+    from-violet-600
+    to-fuchsia-500
+    px-10
+    py-4
+    text-white
+    font-semibold
+    shadow-[0_15px_30px_rgba(124,58,237,.35)]
+    hover:-translate-y-1
+    transition
+  "
+>
+  View Projects →
+</a>
 
-    <button
-      className="
-      rounded-2xl
-      border
-      border-violet-200
-      bg-white/80
-      backdrop-blur
-      px-10
-      py-4
-      font-semibold
-      text-violet-700
-      hover:bg-white
-      transition
-      "
-    >
-      Contact Me
-    </button>
+<a
+  href="#contact"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    rounded-2xl
+    border
+    border-violet-200
+    bg-white/80
+    backdrop-blur
+    px-10
+    py-4
+    font-semibold
+    text-violet-700
+    hover:bg-white
+    transition
+  "
+>
+  Contact Me
+</a>
 
   </div>
 
@@ -387,7 +417,10 @@ export default function Hero() {
 </div>
 
 {/* Projects Section */}
-<div className="relative w-full max-w-6xl mx-auto px-6 mt-28">
+<div
+  id="projects"
+  className="relative w-full max-w-6xl mx-auto px-6 mt-28"
+>
 
 {/* Left Cloud */}
 <Image
@@ -1518,7 +1551,10 @@ export default function Hero() {
   "
 >
   {/* Thumbnail */}
-  <div className="relative">
+  <div
+  className="relative cursor-pointer overflow-hidden"
+  onClick={() => setCertificateIndex(0)}
+>
     <Image
       src="/images/cert1.jpg"
       alt="NVIDIA AI Academy"
@@ -1600,7 +1636,10 @@ export default function Hero() {
   "
 >
   {/* Thumbnail */}
-  <div className="relative">
+  <div
+  className="relative cursor-pointer overflow-hidden"
+  onClick={() => setCertificateIndex(1)}
+>
     <Image
       src="/images/cert2.jpg"
       alt="PSITE NCR"
@@ -1679,7 +1718,10 @@ export default function Hero() {
   "
 >
   {/* Thumbnail */}
-  <div className="relative">
+  <div
+  className="relative cursor-pointer overflow-hidden"
+  onClick={() => setCertificateIndex(2)}
+>
     <Image
       src="/images/cert3.jpg"
       alt="NBDB Registered Author"
@@ -1757,7 +1799,10 @@ export default function Hero() {
     hover:shadow-xl
   "
 >
-  <div className="relative">
+<div
+  className="relative cursor-pointer overflow-hidden"
+  onClick={() => setCertificateIndex(3)}
+>
     <Image
       src="/images/cert4.jpg"
       alt="AI & Automation in MSMEs"
@@ -1835,7 +1880,10 @@ export default function Hero() {
     hover:shadow-xl
   "
 >
-  <div className="relative">
+<div
+  className="relative cursor-pointer overflow-hidden"
+  onClick={() => setCertificateIndex(4)}
+>
     <Image
       src="/images/cert5.jpg"
       alt="Leading with Code"
@@ -1914,7 +1962,10 @@ export default function Hero() {
     hover:shadow-xl
   "
 >
-  <div className="relative">
+<div
+  className="relative cursor-pointer overflow-hidden"
+  onClick={() => setCertificateIndex(5)}
+>
     <Image
       src="/images/cert6.jpg"
       alt="Strategy & Implementation"
@@ -1992,7 +2043,10 @@ export default function Hero() {
     hover:shadow-xl
   "
 >
-  <div className="relative">
+<div
+  className="relative cursor-pointer overflow-hidden"
+  onClick={() => setCertificateIndex(6)}
+>
     <Image
       src="/images/cert7.jpg"
       alt="Cisco Certified Support Technician"
@@ -2070,7 +2124,10 @@ export default function Hero() {
     hover:shadow-xl
   "
 >
-  <div className="relative">
+<div
+  className="relative cursor-pointer overflow-hidden"
+  onClick={() => setCertificateIndex(7)}
+>
     <Image
       src="/images/cert8.jpg"
       alt="OJT Certificate of Completion"
@@ -2148,7 +2205,10 @@ export default function Hero() {
     hover:shadow-xl
   "
 >
-  <div className="relative">
+<div
+  className="relative cursor-pointer overflow-hidden"
+  onClick={() => setCertificateIndex(8)}
+>
     <Image
       src="/images/cert9.jpg"
       alt="Data Analytics Fundamentals"
@@ -2214,7 +2274,10 @@ export default function Hero() {
 </div>
 
 {/* ================= ABOUT ME ================= */}
-<div className="relative w-full max-w-6xl mx-auto px-6 mt-28">
+<div
+  id="about"
+  className="relative w-full max-w-6xl mx-auto px-6 mt-28"
+>
 
   {/* Decorations */}
   <Image
@@ -2400,7 +2463,15 @@ export default function Hero() {
 
   </div>
 
-</div>
+  </div>
+
+<Lightbox
+  open={certificateIndex >= 0}
+  close={() => setCertificateIndex(-1)}
+  index={certificateIndex}
+  slides={certificateImages}
+  plugins={[Zoom]}
+/>
 
 </section>
 
